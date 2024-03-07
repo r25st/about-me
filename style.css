@@ -96,6 +96,25 @@ body {
    
 }
 
+.introduction_text_box > div {
+    margin: 20px;
+    margin-top: 40px;
+    width: 150px;
+    height: 35px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.introduction_text_box > div > a {
+    width: 70%;
+    font-weight: 300;
+    text-decoration: none;
+    color: whitesmoke;
+   
+}
+
 .introduction_img_box {
     width: 45%;
     height: 100%;
