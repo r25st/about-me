@@ -1,20 +1,28 @@
 body {
     font-family: "Epilogue", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-
+#navigation {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
 .navigation_box {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     padding: 10px;
+    border-bottom: solid 0.5px;
 }
 .logo {
     width: 15%;
     margin-left: 10px;
 }
-.logo_box {
-    width: 100%;
+.logo > img {
+   height: 100%;
 }
 
 .navigator {
@@ -59,9 +67,10 @@ body {
 
 .introduction {
     margin-top: 4rem;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: end;
+    margin-bottom: 4rem;
 
 }
 
@@ -69,26 +78,31 @@ body {
     padding-left: 50px;
     width: 45%;
     height: 100%;
-    display: flex;
-    text-align: justify;
-    align-items: start;
-
-}
-
-.introduction_text_box > h5 {
-    font-weight: 300;
-    font-size: 30px;
-    padding-top: 0;
-    margin: 20px;
     
 }
 
-.introduction_text_box > h1 {
-    font-size: 80px;
-    margin: 20px;
+.introduction_text_box {
+    margin-top: 5%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 25% 35% 25% 15%;
+}
+
+.introduction_text_alpha {
+    font-weight: 200;
+    font-size: 40px;
+    padding-top: 0;
+    margin-left: 20px;
+    
+}
+
+.introduction_text_beta {
+   
+    margin-left: 20px;
+    font-size: 60px;
 
 }
-.introduction_text_box > p {
+.introduction_text_charlie {
     width: 70%;
     font-weight: 300;
     margin: 20px;
@@ -96,7 +110,7 @@ body {
    
 }
 
-.introduction_text_box > div {
+.introduction_text_delta {
     margin: 20px;
     margin-top: 40px;
     width: 150px;
@@ -107,74 +121,346 @@ body {
     align-items: center;
 
 }
-.introduction_text_box > div > a {
-    width: 70%;
+.introduction_text_delta > a {
+    width: 90%;
     font-weight: 300;
     text-decoration: none;
     color: whitesmoke;
+    display: flex;
+    justify-content: center;
    
+}
+
+.introduction_text_delta > a:hover {
+    transform: scale(1.1);
+
 }
 
 .introduction_img_box {
     width: 45%;
     height: 100%;
-    padding-right: 20px;
+    margin-left: 5%;
     display: flex;
-    justify-content: start;
-    
+    justify-content: center; 
 
 }
 
-.introduction_img_box > img {
+.introduction_img_box > div > img {
     height: 100%;
 }
 
+.myskill_img {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 0.5px;
+    border-bottom: solid 0.5px;
+
+}
+
+.myskill_img_box {
+    height: 75%;
+    display: flex;
+    align-items: center;
+
+}
+
+.myskill_img_box > img {
+    height: 100%;
 
 
+}
 
+.about_me {
+    height: 100vh;
+    padding-bottom: 30%;
+}
 
+.about_me_h1 {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+}
 
+.about_me_h1  h1 {
+    font-weight: 200;
+    font-size: 40px;
+}
 
+.about_me_card {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 30vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.about_me_card_alpha {
+    height: 100%;
+    width: 20%;
+    border: black solid 1px ;
+}
+.about_me_card_beta {
+    height: 100%;
+    width: 20%;
+    border: black solid 1px ;
+}
+.about_me_card_charlie {
+    height: 100%;
+    width: 20%;
+    border: black solid 1px ;
+}
 
+.about_me_text {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
 
-
-
-
-
-
- @media (min-width : 1600px ) {
-
-    .introduction_text_box > h5 {
-        font-weight: 300;
-        font-size: 50px;
-        
-    }
+.about_me_p_span {
+    font-weight: 500;
+    font-size: larger;
     
-    .introduction_text_box > h1 {
-        font-size: 80px;
+}
 
+#about_me {
+    height: 100vh;
+    
+}
+
+.latest_work {
+    margin-top: 300px;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.latest_work_h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.latest_work_h1  h1 {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.latest_work_box{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    grid-auto-rows: 200px;
+}
+
+.latest_work_card {
+    border: 0.5px solid black;
+}
+.latest_work_card:hover {
+    transform: scale(1.2);
+}
+.latest_work_card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact_me_h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact_me_h1  h1 {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.contact_me_box {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.contact_me_box_alpha {
+    width: 100%;
+    height:90%;
+}
+
+.contact_me_box_alpha >img {
+    width: 75%;
+    height: 75%;
+    padding: 15%;
+    object-fit: contain;
+}
+
+.contact_me_box_beta {
+    width: 100%;
+    height:70%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 100%;
+}
+
+.contact_me_box_h1 {
+    margin-top: 10%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_me_box_h6 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.contact_me_box_icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.icon {
+    width: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 200px;
+  }
+
+
+
+
+
+
+
+@media (max-width : 1333px ) {
+    
+    .introduction_text_alpha {
+        font-size: 30px;
     }
-    .introduction_text_box > p {
-        font-size: 20px;
-       
+
+    .introduction_text_beta {
+        font-size: 50px;
     }
+
+    .introduction_text_charlie {
+        font-size: smaller;
+    }
+   
   }
 
  @media (max-width : 1200px ) {
-    
-    .introduction_text_box > h5 {
-        font-weight: 300;
-        font-size: 20px;      
-    }
-    .introduction_text_box > h1 {
-        font-size: 50px;
-    }
-    .introduction_text_box > p {
-        font-size: 15px;
-       
-    } 
 
+    .introduction {
+        height: 1200px;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .introduction_img_box {
+        width: 100%;
+        grid-area: 1;
+    }
+    .introduction_text {
+        width: 60%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduction_text_beta {
+        font-size: 25px;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+    }
+    .introduction_text_alpha {
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .introduction_text_charlie {
+        margin-left: 18%;
+        font-size: larger;
+        text-align: center;
+    }
+    .introduction_text_delta {
+        display: none;
+    }
+
+    .about_me_card {
+        display: block;
+    }
+    .about_me_card_alpha{
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .sec {
+        display: none;
+    }
+
+    .latest_work_box {
+        display: block;
+    }
+
+    .latest_work_card {
+        margin-bottom: 30px;
+    }
+
+    .contact_me_box {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .contact_me_box_alpha {
+        display: none;
+    }
+
+    .contact_me_box_h1 {
+        margin-top: 0px;
+    }
+
+    .contact_me_box_beta {
+        margin-top: 0px;
+    }
+
+    .contact_me_box_icon {
+        margin-top: 10%;
+    }
   }
 
  @media (min-width : 555) ,(max-width : 789px ) {
@@ -203,17 +489,11 @@ body {
         font-size: 10px;
        
     }
+
+    .latest_work {
+        margin-top: 650px;
+    }
  }
-
-
-
-
-
-
-
-
-
-
 
 
 
