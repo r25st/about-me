@@ -498,6 +498,9 @@ body {
 
 
  @media (max-width : 554px ) {
+    body {
+        margin-left: 5%;
+    }
 
     .navigation_ul {
         gap: 50px;
@@ -505,6 +508,16 @@ body {
 
     .nav-list {
         font-size: small;
+    }
+
+    .introduction_img_box > div > img {
+        margin-left: 10%;
+        height: 500px;
+    }
+
+    .latest_work {
+        margin-top:1200px  ;
+        
     }
 
  }
