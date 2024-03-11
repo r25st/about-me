@@ -328,6 +328,7 @@ body {
     font-size: 35px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .contact_me_box_h6 {
@@ -349,6 +350,7 @@ body {
 }
 
 .footer {
+    width: 100%;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -498,7 +500,7 @@ body {
 
 
  @media (max-width : 554px ) {
-    
+  
 
     .navigation_ul {
         gap: 50px;
@@ -508,9 +510,12 @@ body {
         font-size: small;
     }
 
+    .introduction_img_box {
+        margin-left: 0px;
+    }
+
     .introduction_img_box > div > img {
-        margin-left: 10%;
-        height: 500px;
+       width: 100%;
     }
 
     .latest_work {
