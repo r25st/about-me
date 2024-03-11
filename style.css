@@ -498,9 +498,7 @@ body {
 
 
  @media (max-width : 554px ) {
-    body {
-        margin-left: 5%;
-    }
+    
 
     .navigation_ul {
         gap: 50px;
