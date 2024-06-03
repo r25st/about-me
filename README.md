@@ -29,7 +29,7 @@ I welcome contributions, suggestions, or feedback! If you have any ideas for imp
 
 You can connect with me on:
 - [LinkedIn](https://www.linkedin.com/in/muhammad-raihan-sastrawijaya-toyib-b846171ba)
-- [Email](raihantoyib@gmail.com) : raihantoyib@gmail.com
+- Email : raihantoyib@gmail.com
 
 Feel free to reach out for collaboration opportunities, questions, or just to say hello!
 
